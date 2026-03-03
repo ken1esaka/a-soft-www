@@ -1,0 +1,8 @@
+# WAF設定（有償オプション）
+# 有効:on 無効:off ログ:/var/www/vhosts/@domain_name@/logs/sglite-detect.log
+<IfModule mod_siteguard.c>
+   SiteGuard_User_Enabled off
+</IfModule>
+
+RewriteEngine On
+RewriteRule ^$ /ja/ [R=301,L]
