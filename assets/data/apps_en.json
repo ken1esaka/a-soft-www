@@ -1,0 +1,92 @@
+{
+  "version": 1,
+  "locale": "en",
+  "source": "https://www.a-soft.info/en/",
+  "generatedAt": "2026-03-05",
+  "siteURL": "https://www.a-soft.info/en/",
+  "supportURL": "https://www.a-soft.info/en/support/",
+  "apps": [
+    {
+      "id": "m-piano",
+      "section": "M Series (Next-Generation Chord Books)",
+      "name": "M-Piano",
+      "summary": "Next-generation piano chord book",
+      "iconURL": "https://www.a-soft.info/assets/img/apps/m-series/m_piano_icon_256.png",
+      "detailURL": "https://www.a-soft.info/en/apps/m-piano/"
+    },
+
+    {
+      "id": "p-chord",
+      "section": "Chord Books (Legacy Series)",
+      "name": "P-Chord",
+      "summary": "Piano chord book",
+      "iconURL": "https://www.a-soft.info/assets/img/apps/legacy/p_chord_icon_256.png",
+      "detailURL": "https://www.a-soft.info/en/apps/legacy/pchord/"
+    },
+    {
+      "id": "g-chord",
+      "section": "Chord Books (Legacy Series)",
+      "name": "G-Chord",
+      "summary": "Guitar chord book",
+      "iconURL": "https://www.a-soft.info/assets/img/apps/legacy/g_chord_icon_256.png",
+      "detailURL": "https://www.a-soft.info/en/apps/legacy/gchord/"
+    },
+    {
+      "id": "u-chord",
+      "section": "Chord Books (Legacy Series)",
+      "name": "U-Chord",
+      "summary": "Ukulele chord book",
+      "iconURL": "https://www.a-soft.info/assets/img/apps/legacy/u_chord_icon_256.png",
+      "detailURL": "https://www.a-soft.info/en/apps/legacy/uchord/"
+    },
+    {
+      "id": "bu-chord",
+      "section": "Chord Books (Legacy Series)",
+      "name": "BU-Chord",
+      "summary": "Baritone ukulele chord book",
+      "iconURL": "https://www.a-soft.info/assets/img/apps/legacy/bu_chord_icon_256.png",
+      "detailURL": "https://www.a-soft.info/en/apps/legacy/buchord/"
+    },
+    {
+      "id": "e-chord",
+      "section": "Chord Books (Legacy Series)",
+      "name": "E-Chord",
+      "summary": "Electric guitar chord book",
+      "iconURL": "https://www.a-soft.info/assets/img/apps/legacy/e_chord_icon_256.png",
+      "detailURL": "https://www.a-soft.info/en/apps/legacy/echord/"
+    },
+    {
+      "id": "g-chord-pro",
+      "section": "Chord Books (Legacy Series)",
+      "name": "G-Chord Pro",
+      "summary": "Acoustic guitar chord book",
+      "iconURL": "https://www.a-soft.info/assets/img/apps/legacy/g_chord_pro_icon_256.png",
+      "detailURL": "https://www.a-soft.info/en/apps/legacy/gchord2/"
+    },
+
+    {
+      "id": "a-calc0",
+      "section": "Other Apps",
+      "name": "A-Calc0",
+      "summary": "Simple list-style calculator",
+      "iconURL": "https://www.a-soft.info/assets/img/apps/legacy/a-calc0_icon_256.png",
+      "detailURL": "https://www.a-soft.info/en/apps/acalc0/"
+    },
+    {
+      "id": "a-calcm",
+      "section": "Other Apps",
+      "name": "A-CalcM",
+      "summary": "Advanced list-style calculator",
+      "iconURL": "https://www.a-soft.info/assets/img/apps/legacy/a-calcm_icon_256.png",
+      "detailURL": "https://www.a-soft.info/en/apps/acalcm/"
+    },
+    {
+      "id": "cmail",
+      "section": "Other Apps",
+      "name": "CMail",
+      "summary": "Simple photo email",
+      "iconURL": "https://www.a-soft.info/assets/img/apps/legacy/ccmail_icon_256.png",
+      "detailURL": "https://www.a-soft.info/en/apps/cmail/"
+    }
+  ]
+}
