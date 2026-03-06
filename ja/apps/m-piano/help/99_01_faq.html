@@ -7,20 +7,24 @@
 
 <title>FAQ | M-Piano ヘルプ</title>
 
-<link rel="stylesheet" href="css/help.css">
+<link rel="stylesheet" href="help.css">
 
 </head>
 
 
 
 <body>
-<div id="nav"></div>
-<script>
-fetch("nav.html")
-.then(r => r.text())
-.then(t => document.getElementById("nav").innerHTML = t);
-</script>
-
+    <div id="nav">
+        
+        <nav class="topnav" style="display:flex; justify-content:center; gap:12px; flex-wrap:nowrap; overflow-x:auto; white-space:nowrap; font-size:0.9em;">
+            <a href="index.html">Top</a>
+            <a href="01_00_forward.html">Forward</a>
+            <a href="02_00_reverse.html">Reverse</a>
+            <a href="03_00_memo.html">Memo</a>
+            <a href="04_00_settings.html">Setting</a>
+            <a href="99_00_pro.html">Pro版</a>
+        </nav>
+    </div>
 
 <header class="header">
 
@@ -357,15 +361,6 @@ Pro版では、次の機能が利用できます。
 </ul>
 
 </section>
-
-
-
-<footer class="footer">
-
-<a href="index.html">← ヘルプトップ</a>
-
-</footer>
-
 
 </body>
 </html>

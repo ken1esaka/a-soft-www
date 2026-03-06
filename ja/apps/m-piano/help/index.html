@@ -10,19 +10,24 @@
 <meta property="og:description" content="ピアノコード検索・コード進行作成・メモ管理アプリ M‑Piano の公式ヘルプ。">
 <meta property="og:type" content="website">
 
-<link rel="stylesheet" href="css/help.css">
+<link rel="stylesheet" href="help.css">
 </head>
 
 
 <body>
-<div id="nav"></div>
-<script>
-fetch("nav.html")
-.then(r => r.text())
-.then(t => document.getElementById("nav").innerHTML = t);
-</script>
+    <div id="nav">
+        
+        <nav class="topnav" style="display:flex; justify-content:center; gap:12px; flex-wrap:nowrap; overflow-x:auto; white-space:nowrap; font-size:0.9em;">
+            <a href="01_00_forward.html">Forward</a>
+            <a href="02_00_reverse.html">Reverse</a>
+            <a href="03_00_memo.html">Memo</a>
+            <a href="04_00_settings.html">Setting</a>
+            <a href="99_00_pro.html">Pro版</a>
+            <a href="99_01_faq.html">FAQ</a>
+        </nav>
+    </div>
 
-<header class="help-header">
+<header class="header">
   <h1>M-Piano ヘルプ</h1>
   <p>ピアノコード検索・コード進行作成・メモ管理アプリ</p>
 </header>
@@ -30,8 +35,8 @@ fetch("nav.html")
 
 <section class="hero">
 
-  <!-- 画像（あなたの指定：トップにタブ説明用の画像を入れる） -->
-  <img class="hero-img" src="img/help_main.png" alt="M‑Piano メイン画面（Forward / Reverse / Memo / Setting タブ）" style="width:60%; height:auto; display:block; margin:0 auto; border-radius:12px;">
+  <!-- 画像（あなたの指定：Topにタブ説明用の画像を入れる） -->
+  <img class="hero-img" src="help_main.png" alt="M‑Piano メイン画面（Forward / Reverse / Memo / Setting タブ）" style="width:100%; max-width:700px; height:auto; display:block; margin:0 auto; border-radius:12px;">
 
   <p class="lead">
 M-Piano は、ピアノコードの検索・分析・整理を行うためのツールです。<br>
