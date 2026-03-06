@@ -5,9 +5,10 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<title>Memo | M-Piano ヘルプ</title>
 
 <link rel="stylesheet" href="css/help.css">
+
+
 
 </head>
 
@@ -23,7 +24,9 @@ fetch("nav.html")
 
 <header class="header">
 
-<h1>Memo</h1>
+<h1>
+    <img class="icon-inline" src="img/tab_memo@3x.png" alt="Memoタブ" style="height:1.1em; position:relative; top:-0.10em; margin-right:0.2em;">
+    Memo</h1>
 
 <p class="subtitle">
 コード進行メモ
@@ -39,76 +42,50 @@ fetch("nav.html")
 
 <p>
 
-Memoは  
-コード進行を保存する機能です。
-
+Memoはコード進行を保存・整理する機能です。<br>
+ForwardやReverseで見つけたコードをメモとして保存し、再生や共有を行うことができます。
 </p>
-
-<p>
-
-ForwardやReverseで見つけたコードを  
-メモとして保存できます。
-
-</p>
+<img class="hero-img" src="img/help_memo.png" alt="M‑Piano Memo画面" style="width:60%; height:auto; display:block; margin:0 auto;">
 
 </section>
 
-
-
 <section>
 
-<h2>メモの追加</h2>
+<h2>画面の構成</h2>
 
 <p>
-
-コードの右側にある  
-<strong>メモボタン</strong>をタップすると  
-現在のコードをMemoに追加できます。
-
+Memo画面の主な要素は次のとおりです。
 </p>
 
-<p>
+<p><strong>① ページタイトル</strong><br>
+現在表示しているメモページのタイトルです。タイトルを直接編集してページ名を変更できます。</p>
 
-メモは
+<p><strong>② ページ選択ボタン</strong><br>
+登録されているメモページの一覧を表示します。別のページを選択すると、そのページのメモが表示されます。</p>
 
-</p>
+<p><strong>③ ページ追加ボタン</strong><br>
+新しいメモページを作成します。（Pro版）</p>
 
-<ul>
+<p><strong>④ インポートボタン</strong><br>
+コード譜テキストを読み込み、コード進行として取り込みます。</p>
 
-<li>Forward</li>
-<li>Reverse</li>
+<p><strong>⑤ ポジション鍵盤</strong><br>
+コードの押さえ方（ポジション）を鍵盤で表示します。</p>
 
-</ul>
+<p><strong>⑥ タップボタン</strong><br>
+コード名ボタンをタップするとコードが再生され、対応する鍵盤ポジションが表示されます。</p>
 
-から追加できます。
+<p><strong>⑦ 転調ボタン</strong><br>
+コード進行を半音単位で移調します。</p>
 
-</section>
+<p><strong>⑧ メール送信（共有）ボタン</strong><br>
+メモ内容をメールや共有機能で送信できます。（Pro版）</p>
 
+<p><strong>⑨ クリアボタン</strong><br>
+現在のページのメモをすべて削除します。</p>
 
-
-<section>
-
-<h2>メモの確認</h2>
-
-<p>
-
-Memoに保存されたコードは  
-タップすることで音を確認できます。
-
-</p>
-
-<p>
-
-タップすると
-
-</p>
-
-<ul>
-
-<li>コードが再生される</li>
-<li>鍵盤ポジションが表示される</li>
-
-</ul>
+<p><strong>⑩ 編集ボタン</strong><br>
+メモの並び替えや削除などの編集を行います。</p>
 
 </section>
 
@@ -120,14 +97,14 @@ Memoに保存されたコードは
 
 <p>
 
-メモのコードボタンは  
+メモのコードボタンは
 <strong>全画面表示</strong>にすることができます。
 
 </p>
 
 <p>
 
-ライブや練習中に  
+ライブや練習中に
 コードを大きく表示できます。
 
 </p>
@@ -142,7 +119,7 @@ Memoに保存されたコードは
 
 <p>
 
-保存できるメモ数は  
+保存できるメモ数は
 アプリのバージョンによって異なります。
 
 </p>
@@ -164,23 +141,19 @@ Memoに保存されたコードは
 
 <p>
 
-Pro版では  
+Pro版では
 メモを<strong>ページ単位</strong>で管理できます。
 
 </p>
 
 <p>
 
-ページには  
+ページには
 タイトルを付けることができます。
 
 </p>
 
-<p>
-
-例
-
-</p>
+<p><strong>例</strong></p>
 
 <ul>
 
@@ -193,48 +166,10 @@ Pro版では
 
 <p>
 
-ページを使うことで  
+ページを使うことで
 コード進行を整理して管理できます。
 
 </p>
-
-</section>
-
-
-
-<section>
-
-<h2>トランスポーズ</h2>
-
-<p>
-
-メモのコード進行は  
-<strong>トランスポーズ</strong>できます。
-
-</p>
-
-<p>
-
-半音単位で  
-コード進行を移調できます。
-
-</p>
-
-<p>
-
-例
-
-</p>
-
-<pre>
-
-C  G  Am  F
-
-↓ +2
-
-D  A  Bm  G
-
-</pre>
 
 </section>
 
@@ -246,9 +181,11 @@ D  A  Bm  G
 
 <p>
 
-コード譜を貼り付けると  
-コード進行を自動解析して  
-メモに取り込むことができます。
+コード譜を貼り付けると
+コード進行を自動解析して
+メモに取り込むことができます。<br>
+
+<a href="03_01_import.html">→ インポート画面の詳しい説明</a>
 
 </p>
 
@@ -275,47 +212,18 @@ D  A  Bm  G
 
 <section>
 
-<h2>メモ共有</h2>
-
-<p>
-
-メモはメールで送信できます。
-
-</p>
-
-<p>
-
-送信できる内容
-
-</p>
-
-<ul>
-
-<li>コード一覧</li>
-<li>鍵盤画像</li>
-<li>コード譜</li>
-<li>.mpmemoファイル</li>
-
-</ul>
-
-</section>
-
-
-
-<section>
-
 <h2>.mpmemoファイル</h2>
 
 <p>
 
-.mpmemoファイルは  
+.mpmemoファイルは
 M-Pianoのメモデータです。
 
 </p>
 
 <p>
 
-メールで受け取った  
+メールで受け取った
 .mpmemoファイルを
 
 </p>
@@ -341,7 +249,7 @@ M-Pianoのメモデータです。
 
 <p>
 
-友人やバンドメンバーと  
+友人やバンドメンバーと
 コード進行を簡単に共有できます。
 
 </p>

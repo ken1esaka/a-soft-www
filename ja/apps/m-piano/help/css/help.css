@@ -23,6 +23,10 @@ body{
   line-height:1.7;
 }
 
+.icon-inline{
+  height:1.2em;
+  vertical-align:middle;
+}
 /* ページ全体の最大幅（PCで読みやすくする） */
 body > header,
 body > section,
@@ -33,11 +37,23 @@ body > footer{
 }
 
 a{
-  color:inherit;
+  color:#0a84ff;
+  text-decoration:none;
 }
 
 a:hover{
-  opacity:.9;
+  text-decoration:underline;
+  opacity:1;
+}
+
+
+a:visited{
+  color:#6b5cff;
+}
+
+
+a:active{
+  opacity:.7;
 }
 
 /* ===== Header / Footer ===== */
@@ -97,13 +113,14 @@ h3{
 }
 
 .hero-img{
-  width:100%;
-  height:auto;
   display:block;
+  height:auto;
   border-radius:12px;
+  clip-path: inset(0 round 12px);
   border:1px solid var(--line);
   background:var(--subbg);
 }
+
 
 .lead{
   margin:14px 0 0 0;
