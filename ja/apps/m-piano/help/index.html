@@ -13,7 +13,14 @@
 <link rel="stylesheet" href="css/help.css">
 </head>
 
+
 <body>
+<div id="nav"></div>
+<script>
+fetch("nav.html")
+.then(r => r.text())
+.then(t => document.getElementById("nav").innerHTML = t);
+</script>
 
 <header class="help-header">
   <h1>M-Piano ヘルプ</h1>
@@ -27,12 +34,9 @@
   <img class="hero-img" src="img/help_main.png" alt="M‑Piano メイン画面（Forward / Reverse / Memo / Setting タブ）">
 
   <p class="lead">
-    M-Piano は<br>
-    <strong>ピアノコード検索</strong> /
-    <strong>コード進行作成</strong> /
-    <strong>コードメモ管理</strong> /
-    <strong>コード譜インポート</strong><br>
-    を行うことができる、実践型のピアノコードツールです。
+M-Piano は、ピアノコードの検索・分析・整理を行うためのツールです。<br>
+<strong>コード検索</strong>、<strong>コード逆引き</strong>、<strong>コード進行メモ</strong>、<strong>コード譜インポート</strong>などの機能を使って、
+学習・作曲・演奏の確認を効率よく行えます。
   </p>
 
   <!-- 重要：誤解されやすい点を先に明記 -->
@@ -121,22 +125,14 @@
   <h2>M-Pianoの主な機能</h2>
 
   <ul>
-    <li>ピアノコード検索（Forward）</li>
-    <li>コード逆引き検索（Reverse）</li>
-    <li>コード進行メモ（Memo）</li>
-    <li>コード譜インポート（貼り付け解析）</li>
-    <li>メモのトランスポーズ（移調）</li>
-    <li>コード共有（メール）</li>
-    <li>.mpmemoファイルによるメモ共有（受け取ってダブルクリック→M-Piano起動→インポート）</li>
-  </ul>
+<li>コード名からピアノコードを検索（Forward）</li>
+<li>押さえた鍵盤からコード名を逆引き（Reverse）</li>
+<li>コード進行をメモとして保存・整理（Memo）</li>
+<li>コード進行のトランスポーズ（移調）</li>
+<li><span class="pro-badge">PRO</span>コード譜インポート（貼り付け解析）</li>
+<li><span class="pro-badge">PRO</span>.mpmemoファイルによるメモ共有</li>
+</ul>
 
-  <div class="note">
-    <p class="note-title">Pro版で拡張される代表的な要素</p>
-    <ul>
-      <li><span class="pro-badge">PRO</span> 表示できるコードタイプが増えます（表示範囲が拡張されます）。</li>
-      <li><span class="pro-badge">PRO</span> オンベース（/C など）が使えます。</li>
-    </ul>
-  </div>
 
 </section>
 
@@ -163,18 +159,20 @@
     詳細は <a href="03_01_import.html">インポートの説明</a> を参照してください。
   </p>
 
+  <p><strong>例：このようなコード譜を貼り付けると解析されます</strong></p>
   <pre>
-C        G
-夜の風が　静かに吹いて
+      CM7  Bm7  D/E  Em
+      頑張らなくてもいいいんだよ
+      (ピアノのみ)
 
-Am       F
-街の灯り　揺れている
+      C  G/B  Am7/D  D7
+      G/D D/F#  Em  Em7  C  G/B  Am7  D
 
-C        G
-小さな歌を　口ずさめば
-
-F        G        C
-明日へ続く　道になる
+      (ミュートアルペジオ)
+      G    D/F#    Em    Em7        C   C/B   Am7     D
+        朝の光が まぶしすぎる日は 布団の中で 少しだけ夢を見よう
+      G    D/F#    Em    Em7            C    G/B    Am7      G
+         昨日の涙も うまく笑えない顔も 誰かと比べなくていいんだよ
   </pre>
 </section>
 
@@ -184,16 +182,18 @@ F        G        C
   <h2>Pro版について</h2>
 
   <p>
-    Pro版では、学習・作曲・整理をより快適にするための機能が追加されます。<br>
-    ヘルプ内では <span class="pro-badge">PRO</span> マーク付きの項目が Pro版の内容です。
+無料版でも主要機能を利用できます。<br>
+Pro版では機能制限が解除され、さらに多くの機能が利用できます。<br>
+ヘルプ内では <span class="pro-badge">PRO</span> マーク付きの項目が Pro版の内容です。
   </p>
 
   <ul>
-    <li><span class="pro-badge">PRO</span> メモのページ管理（タイトル別に複数ページで保存）</li>
-    <li><span class="pro-badge">PRO</span> メモできる数は理論上無制限（1ページのコード数も実質無制限）</li>
-    <li><span class="pro-badge">PRO</span> 表示できるコードタイプが増える（表示範囲が拡張）</li>
-    <li><span class="pro-badge">PRO</span> オンベース（/C〜/B）</li>
-  </ul>
+<li><span class="pro-badge">PRO</span> メモのページ管理（複数ページで整理）</li>
+<li><span class="pro-badge">PRO</span> メモ数・コード数の制限が大きく拡張</li>
+<li><span class="pro-badge">PRO</span> 表示できるコードタイプが増える<br><small>Settingでスタンダード(10) → スタンダード+(25) → すべて(85) と拡張できます</small></li>
+<li><span class="pro-badge">PRO</span> オンベース（/C〜/B）に対応</li>
+<li><span class="pro-badge">PRO</span> コード譜インポートと .mpmemo 共有</li>
+</ul>
 
   <p>
     Pro版の詳細は <a href="99_00_pro.html">Pro版の説明</a> を参照してください。
@@ -211,7 +211,7 @@ F        G        C
     <li><a href="03_01_import.html">インポート（貼り付け解析）</a></li>
     <li><a href="04_00_settings.html">Setting（設定）</a></li>
     <li><a href="99_00_pro.html">Pro版について</a></li>
-    <li><a href="99_01_fqq.html">FAQ（よくある質問）</a></li>
+    <li><a href="99_01_faq.html">FAQ（よくある質問）</a></li>
   </ul>
 </section>
 

@@ -8,11 +8,31 @@
 <title>コード譜インポート | M-Piano ヘルプ</title>
 
 <link rel="stylesheet" href="css/help.css">
+    
+<style>
+.hero-half {
+  width: 100%;
+  height: auto;
+}
+
+@media (min-width: 900px) {
+  .hero-half {
+    width: 30%;
+  }
+}
+</style>
 
 </head>
 
 
+
 <body>
+<div id="nav"></div>
+<script>
+fetch("nav.html")
+.then(r => r.text())
+.then(t => document.getElementById("nav").innerHTML = t);
+</script>
 
 
 <header class="header">
@@ -33,7 +53,7 @@
 
 <p>
 
-コード譜インポートは、テキストのコード譜を貼り付けるだけで  
+コード譜インポートは、テキストのコード譜を貼り付けるだけで
 コード進行を自動解析し、Memoに取り込む機能です。
 
 </p>
@@ -128,14 +148,14 @@
 
 <p>
 
-Pro版では、<strong>青色で表示されたコード名</strong>をタップすると  
+Pro版では、<strong>青色で表示されたコード名</strong>をタップすると
 その場で音を確認できます。
 
 </p>
 
 <p class="note">
 
-※ 非課金版では、プレビュー中のコード名タップによる再生はできません。  
+※ 非課金版では、プレビュー中のコード名タップによる再生はできません。
 （Pro版の案内が表示されます）
 
 </p>
@@ -171,7 +191,7 @@ Pro版では、<strong>青色で表示されたコード名</strong>をタップ
 
 <p>
 
-「同じコードを複数回取り込む」をオンにすると、  
+「同じコードを複数回取り込む」をオンにすると、
 同じコードが何回出現しても、そのまま取り込みます。
 
 </p>
@@ -239,7 +259,7 @@ Pro版では、<strong>青色で表示されたコード名</strong>をタップ
 
 <p class="note">
 
-※ <strong>インポート実行はPro版のみ</strong>です。  
+※ <strong>インポート実行はPro版のみ</strong>です。
 非課金版ではロック表示になり、押すとPro案内が開きます。
 
 </p>
@@ -298,17 +318,18 @@ Pro版では、<strong>青色で表示されたコード名</strong>をタップ
 
 <pre>
 
-C        G
-夜の風が　静かに吹いて
+    CM7  Bm7  D/E  Em
+    頑張らなくてもいいいんだよ
+    (ピアノのみ)
 
-Am       F
-街の灯り　揺れている
+    C  G/B  Am7/D  D7
+    G/D D/F#  Em  Em7  C  G/B  Am7  D
 
-C        G
-小さな歌を　口ずさめば
-
-F        G        C
-明日へ続く　道になる
+    (ミュートアルペジオ)
+    G    D/F#    Em    Em7        C   C/B   Am7     D
+      朝の光が まぶしすぎる日は 布団の中で 少しだけ夢を見よう
+    G    D/F#    Em    Em7            C    G/B    Am7      G
+       昨日の涙も うまく笑えない顔も 誰かと比べなくていいんだよ
 
 </pre>
 
@@ -317,16 +338,17 @@ F        G        C
 プレビューで解析結果を確認し、問題なければ「インポート実行」でMemoに取り込みます。
 
 </p>
-
+<div style="text-align:center; font-size:28px; margin:10px 0;">↓</div>
+<img class="hero-img hero-half" src="img/help_kasi.png" alt="M‑Piano インポート結果）" style="display:block; margin:0 auto;">
 </section>
 
 
 
 <footer class="footer">
 
-<a href="memo.html">Memoへ（メモ機能）</a>
+<a href="03_00_memo.html">Memoへ（メモ機能）</a>
 <span class="sep">|</span>
-<a href="settings.html">Settingへ（設定）</a>
+<a href="04_00_settings.html">Settingへ（設定）</a>
 <span class="sep">|</span>
 <a href="index.html">← ヘルプトップ</a>
 

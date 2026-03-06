@@ -12,7 +12,14 @@
 </head>
 
 
+
 <body>
+<div id="nav"></div>
+<script>
+fetch("nav.html")
+.then(r => r.text())
+.then(t => document.getElementById("nav").innerHTML = t);
+</script>
 
 
 <header class="header">
